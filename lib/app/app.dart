@@ -5,6 +5,7 @@ import '../features/navigator/view/navigator_page.dart';
 
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget{
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'AR Navigator',
       home: const HomePage(),
     );
@@ -24,7 +26,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
+      
       appBar: AppBar(title: const Text('AR Navigator')),
       body: Center(
         child: Column(
