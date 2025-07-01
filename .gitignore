@@ -18,6 +18,8 @@ migrate_working_dir/
 *.iws
 .idea/
 
+server/node_modules/
+
 server/node_modules
 server/logs/server.log
 
